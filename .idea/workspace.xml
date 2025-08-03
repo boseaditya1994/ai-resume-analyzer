@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea216788-ac0e-4aa4-a5b8-818bd4590d76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/JetBrainsMono-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/JetBrainsSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/technologies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webstorm-icon-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webstorm-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/welcome.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +41,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Lenovo/WebstormProjects/ai-resume-analyzer/src/main.js",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Lenovo\\WebstormProjects\\ai-resume-analyzer\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.sync",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\Lenovo\\WebstormProjects\\ai-resume-analyzer\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754202991844</updated>
-      <workItem from="1754202991844" duration="1244000" />
+      <workItem from="1754202991844" duration="1817000" />
     </task>
     <servers />
   </component>
