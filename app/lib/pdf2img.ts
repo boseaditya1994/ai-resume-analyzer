@@ -11,7 +11,6 @@ let loadPromise: Promise<any> | null = null;
 async function loadPdfJs(): Promise<any> {
     if (pdfjsLib) return pdfjsLib;
     if (loadPromise) return loadPromise;
-
     isLoading = true;
     // @ts-expect-error - pdfjs-dist/build/pdf.mjs is not a module
     loadPromise = import("pdfjs-dist/build/pdf.mjs").then((lib) => {
@@ -21,7 +20,6 @@ async function loadPdfJs(): Promise<any> {
         isLoading = false;
         return lib;
     });
-
     return loadPromise;
 }
 
@@ -76,6 +74,7 @@ export async function convertPdfToImage(
             ); // Set quality to maximum (1.0)
         });
     } catch (err) {
+        console.log(err);
         return {
             imageUrl: "",
             file: null,
