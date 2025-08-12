@@ -74,13 +74,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {/* Safer external script loading */}
-        <script
-          src="https://js.puter.com/v2/"
-          async
-          // integrity attribute is example only — replace with real SRI hash
-          integrity="sha384-abc123"
-          crossOrigin="anonymous"
-        ></script>
+        <script src="https://js.puter.com/v2/" async></script>
 
         <div id="app-root" role="main">
           {children}

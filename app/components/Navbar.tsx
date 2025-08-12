@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         aria-label="Go to CareerMind homepage"
       >
-        <h1 className="text-2xl font-bold text-gradient m-0">CAREERMIND</h1>
+        <h1 className="!text-4xl font-bold text-gradient">CAREERMIND</h1>
       </Link>
 
       {/* Upload Resume Button */}
