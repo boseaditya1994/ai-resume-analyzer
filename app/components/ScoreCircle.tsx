@@ -1,18 +1,28 @@
-const ScoreCircle = ({ score = 75 }: { score: number }) => {
+interface ScoreCircleProps {
+  score?: number;
+}
+
+const ScoreCircle: React.FC<ScoreCircleProps> = ({ score = 75 }) => {
   const radius = 40;
   const stroke = 8;
   const normalizedRadius = radius - stroke / 2;
   const circumference = 2 * Math.PI * normalizedRadius;
-  const progress = score / 100;
+  const progress = Math.min(Math.max(score, 0), 100) / 100; // Clamp 0–100
   const strokeDashoffset = circumference * (1 - progress);
 
   return (
-    <div className="relative w-[100px] h-[100px]">
+    <div
+      className="relative w-[100px] h-[100px]"
+      role="img"
+      aria-label={`Resume score: ${score} out of 100`}
+      title={`Resume score: ${score} out of 100`}
+    >
       <svg
         height="100%"
         width="100%"
         viewBox="0 0 100 100"
         className="transform -rotate-90"
+        xmlns="http://www.w3.org/2000/svg"
       >
         {/* Background circle */}
         <circle
@@ -23,13 +33,16 @@ const ScoreCircle = ({ score = 75 }: { score: number }) => {
           strokeWidth={stroke}
           fill="transparent"
         />
-        {/* Partial circle with gradient */}
+
+        {/* Gradient definition */}
         <defs>
           <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="#FF97AD" />
             <stop offset="100%" stopColor="#5171FF" />
           </linearGradient>
         </defs>
+
+        {/* Progress circle */}
         <circle
           cx="50"
           cy="50"
@@ -43,8 +56,11 @@ const ScoreCircle = ({ score = 75 }: { score: number }) => {
         />
       </svg>
 
-      {/* Score and issues */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
+      {/* Score text */}
+      <div
+        className="absolute inset-0 flex flex-col items-center justify-center"
+        aria-hidden="true"
+      >
         <span className="font-semibold text-sm">{`${score}/100`}</span>
       </div>
     </div>
